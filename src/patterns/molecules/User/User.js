@@ -6,8 +6,8 @@ import { Row, Col } from 'reactstrap';
 const User = props =>
   props.user && (
     <Row>
-      <Col lg="1">
-        <LocalImage imgClass="list-img" src="logo.svg" alt="" />
+      <Col lg="2">
+        <LocalImage imgClass="list-img" src="gimmick_daveo.png" alt="" />
       </Col>
       <Col>
         <Alert color={'light'} display={props.user.name} />

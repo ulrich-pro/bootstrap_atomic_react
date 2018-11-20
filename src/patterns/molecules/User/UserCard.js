@@ -13,7 +13,7 @@ const UserCard = props => {
     props.user && (
       <div>
         <Card>
-          <LocalImage src="logo.svg" />
+          <LocalImage src="gimmick_daveo.png" />
           <CardBody style={styles.container}>
             <CardTitle>{props.user.name}</CardTitle>
             <CardSubtitle>{props.user.email}</CardSubtitle>

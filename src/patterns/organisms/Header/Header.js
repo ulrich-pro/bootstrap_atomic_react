@@ -8,7 +8,7 @@ const Header = () => (
   <div className="header-org">
     <Navbar color="light" light expand="md">
       <NavbarBrand href="/">
-        <LocalImage src="logo.svg" alt="" />
+        <LocalImage src="logo_daveo.png" alt="" />
       </NavbarBrand>
       <Collapse navbar>
         <Nav className="ml-auto" navbar>
