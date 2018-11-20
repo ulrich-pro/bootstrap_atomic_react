@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeTpl from '../components/templates/Home';
+import HomeTpl from '../patterns/templates/Home';
 
 const Home = props => (
   <div className="home">

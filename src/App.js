@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import Main from './routes/Main';
-import Header from './components/organismes/Header/Header';
+import Header from './patterns/organisms/Header/Header';
 
 export const myStore = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 

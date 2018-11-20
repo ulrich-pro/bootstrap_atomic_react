@@ -1,19 +1,19 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import RightSideBar from '../organismes/SideBars/RightSideBar';
-import UserList from '../organismes/UserList/UserList';
+import RightSideBar from '../organisms/SideBars/RightSideBar';
+import UserListContainer from '../organisms/UserList/UserListContainer';
 
 const UserManagment = props => (
   <Container>
     <Row>
       <Col>
-        <UserList/>
+        <UserListContainer />
       </Col>
       <Col md="3">
         <RightSideBar />
       </Col>
       {/* .... 
-        other organismes */}
+        other organisms */}
     </Row>
   </Container>
 );

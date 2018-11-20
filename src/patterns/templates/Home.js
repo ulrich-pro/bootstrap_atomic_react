@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import LeftSideBar from '../organismes/SideBars/LeftSideBar';
-import Welcome from '../organismes/Home/Welcome';
+import LeftSideBar from '../organisms/SideBars/LeftSideBar';
+import Welcome from '../organisms/Home/Welcome';
 
 const Home = props => (
   <Container>
@@ -13,7 +13,7 @@ const Home = props => (
         <Welcome />
       </Col>
       {/* .... 
-        other organismes */}
+        other organisms */}
     </Row>
   </Container>
 );
