@@ -1,6 +1,7 @@
-import React from 'react';
-import ButtonLink from '../../molecules/SideBars/ButtonLink';
-import { colors } from '../../../utils/Theme';
+import React, { memo } from 'react';
+
+import ButtonLink from 'patterns/molecules/SideBars/ButtonLink';
+import { colors } from 'utils/Theme';
 
 const styles = {
   container: {
@@ -13,12 +14,12 @@ const styles = {
   },
 };
 
-const LeftSideBar = props => (
+const LeftSideBar = memo(props => (
   <div style={styles.container}>
     <ButtonLink />
     {/* ....
     other molecules */}
   </div>
-);
+));
 
 export default LeftSideBar;

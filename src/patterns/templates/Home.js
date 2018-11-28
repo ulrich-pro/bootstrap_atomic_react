@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import LeftSideBar from '../organisms/SideBars/LeftSideBar';
-import Welcome from '../organisms/Home/Welcome';
 
-const Home = props => (
+import LeftSideBar from 'patterns/organisms/SideBars/LeftSideBar';
+import Welcome from 'patterns/organisms/Home/Welcome';
+
+const Home = memo(props => (
   <Container>
     <Row>
       <Col md="3">
@@ -16,6 +17,6 @@ const Home = props => (
         other organisms */}
     </Row>
   </Container>
-);
+));
 
 export default Home;

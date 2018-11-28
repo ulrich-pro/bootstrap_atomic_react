@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { connect } from 'react-redux';
 
-import { colors } from '../../../utils/Theme';
-import UserCard from '../../molecules/User/UserCard';
+import { colors } from 'utils/Theme';
+import UserCard from 'patterns/molecules/User/UserCard';
 
 const styles = {
   container: {
@@ -15,13 +15,13 @@ const styles = {
   },
 };
 
-const RightSideBar = props => (
+const RightSideBar = memo(props => (
   <div style={styles.container}>
-    <UserCard user={props.users.selectedUser}></UserCard>
+    <UserCard user={props.users.selectedUser} />
     {/* ....
     other molecules */}
   </div>
-);
+));
 
 const mapStateToProps = state => ({
   users: state.users,

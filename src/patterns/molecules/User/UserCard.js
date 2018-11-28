@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
-import LocalImage from '../../atomes/Images/LocalImage';
-import { colors } from '../../../utils/Theme';
+
+import LocalImage from 'patterns/atomes/Images/LocalImage';
+import { colors } from 'utils/Theme';
 
 const styles = {
   container: {
     color: colors.grey,
   },
 };
-const UserCard = props => {
+const UserCard = memo(props => {
   return (
     props.user && (
       <div>
@@ -25,6 +26,6 @@ const UserCard = props => {
       </div>
     )
   );
-};
+});
 
 export default UserCard;

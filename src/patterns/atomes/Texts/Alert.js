@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Alert } from 'reactstrap';
 
-const AlertAtm = props => <Alert color={props.color || 'primary'}>{props.display}</Alert>;
+const AlertAtm = memo(props => <Alert color={props.color || 'primary'}>{props.display}</Alert>);
 
 export default AlertAtm;

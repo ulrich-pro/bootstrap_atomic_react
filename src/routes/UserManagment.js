@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import UserManagment from '../pages/UserManagment';
+
+import UserManagment from 'pages/UserManagment';
 
 const UserManagmentRoute = () => (
   <Switch>

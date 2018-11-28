@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import RightSideBar from '../organisms/SideBars/RightSideBar';
-import UserListContainer from '../organisms/UserList/UserListContainer';
 
-const UserManagment = props => (
+import RightSideBar from 'patterns/organisms/SideBars/RightSideBar';
+import UserListContainer from 'patterns/organisms/UserList/UserListContainer';
+
+const UserManagment = memo(props => (
   <Container>
     <Row>
       <Col>
@@ -16,6 +17,6 @@ const UserManagment = props => (
         other organisms */}
     </Row>
   </Container>
-);
+));
 
 export default UserManagment;

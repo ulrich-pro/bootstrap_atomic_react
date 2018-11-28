@@ -1,10 +1,11 @@
-import React from 'react';
-import {colors} from '../../../utils/Theme';
+import React, { memo } from 'react';
+
+import { colors } from 'utils/Theme';
 
 const styles = {
   container: {
     padding: 10,
-      color: colors.grey,
+    color: colors.grey,
   },
 
   h1: {
@@ -12,10 +13,10 @@ const styles = {
   },
 };
 
-const Title = props => (
+const Title = memo(props => (
   <div style={styles.container}>
     <h1 style={styles.h1}>{props.display}</h1>
   </div>
-);
+));
 
 export default Title;
